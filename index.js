@@ -76,6 +76,8 @@ app.get('/jira/callback', function(req, res) {
   );
 });
 
+app.get('/checksession', function(req, res) {});
+
 app.get('/projects', function(req, res) {
   var consumer = new OAuth(
     base_url + '/plugins/servlet/oauth/request-token',
